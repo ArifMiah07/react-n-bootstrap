@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Sidebar from "./components/sidebar/Sidebar";
+// import Sidebar from "./components/sidebar/Sidebar";
 import "./custom.scss";
 
 function App() {
@@ -8,8 +8,15 @@ function App() {
     <div className="main-container">
       {/* Sidebar Column (1fr) */}
       <div className="all_bars_height sidebar my-element">
-        <div className="inner text-white">
-          <Sidebar />
+        <div className="inner text-white d-flex flex-column align-items-center">
+          <div className="d-flex flex-column align-items-center gap-3">
+            <img src="../src/assets/Random Symboles 5.png" alt="" />
+            <img src="../src/assets/Icon - Home.png" alt="" />
+            <img src="../src/assets/Icon - Message.png" alt="" />
+            <img src="../src/assets/Icon - Buy.png" alt="" />
+            <img src="../src/assets/Icon - Activity.png" alt="" />
+            <img src="../src/assets/Icon - Time Circle.png" alt="" />
+          </div>
         </div>
       </div>
 

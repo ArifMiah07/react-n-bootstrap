@@ -5,7 +5,10 @@ import React from 'react';
 const Sidebar = () => {
     return (
         <div className=''>
-            <h1 className='fs-5'>this is side bar</h1>
+            <div>
+                <img src="../../assets/Random Symboles 5.png" alt="Random Symbol" width={'24px'} height={'24px'} />
+
+            </div>
         </div>
     );
 };
