@@ -17,6 +17,23 @@ function App() {
             <img src="../src/assets/Icon - Activity.png" alt="" />
             <img src="../src/assets/Icon - Time Circle.png" alt="" />
           </div>
+          {/* 2nd row */}
+          <div className="d-flex flex-column align-items-center gap-3">
+            <img src="../src/assets/Random Symboles 5.png" alt="" />
+            <img src="../src/assets/Icon - Home.png" alt="" />
+            <img src="../src/assets/Icon - Message.png" alt="" />
+            <img src="../src/assets/Icon - Buy.png" alt="" />
+            <img src="../src/assets/Icon - Activity.png" alt="" />
+            <img src="../src/assets/Icon - Time Circle.png" alt="" />
+          </div>
+          <div className="d-flex flex-column align-items-center gap-3">
+            <img src="../src/assets/Random Symboles 5.png" alt="" />
+            <img src="../src/assets/Icon - Home.png" alt="" />
+            <img src="../src/assets/Icon - Message.png" alt="" />
+            <img src="../src/assets/Icon - Buy.png" alt="" />
+            <img src="../src/assets/Icon - Activity.png" alt="" />
+            <img src="../src/assets/Icon - Time Circle.png" alt="" />
+          </div>
         </div>
       </div>
 
