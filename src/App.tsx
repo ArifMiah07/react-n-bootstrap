@@ -15,12 +15,12 @@ function App() {
 
       {/* Content Column (8fr) */}
       <div className="middle-section all_bars_height content col-12 col-sm-8 col-md-6 col-lg-7">
-        <div className="bg-primary text-white p-3">Column 2</div>
+        <div className="bg-primary text-white p-3">Column or Middle or Center</div>
       </div>
 
       {/* Right Column (3fr) */}
       <div className=" end-section all_bars_height right col-12 col-sm-12 col-md-3 col-lg-3">
-        <div className="bg-primary text-white p-3">Column 3</div>
+        <div className="bg-primary text-white p-3">Column 3 or Right or Last</div>
       </div>
     </div>
   );
