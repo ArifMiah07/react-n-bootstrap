@@ -1,0 +1,100 @@
+// Import Bootstrap's SCSS
+@import "bootstrap/scss/bootstrap";
+@import "./variables"; // Import the variables file
+
+:root {
+  --max-width: 1920px;
+  --max-height: 1170px;
+  --col-1-width: 72px;
+  --col-1-height: 1081px;
+  --col-2-width: 1338px;
+  --col-2-height: 1081px;
+  --col-3-width: 368px;
+  --col-3-height: 1082px;
+}
+
+body {
+  background: #0b0d21; // Light gray background
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 3fr; /* Define 3 columns with ratio 1fr, 8fr, 3fr */
+  grid-template-rows: 1fr; /* Single row */
+  max-width: var(--max-width);
+  max-height: var(--max-height);
+  margin: 0 auto;
+  padding: 20px;
+  gap: 10px;
+  width: 100%;
+}
+
+
+.middle-section {
+  width: $col_2_width;
+}
+.end-section {
+  width: $col_3_width;
+}
+
+.all_bars_height {
+  height: $all_col_height;
+}
+
+.my-element {
+  position: relative;
+  border-radius: 16px; /* Rounded corners */
+  background: linear-gradient(162deg, #161A42 22.61%, rgba(22, 26, 66, 0.0) 118.29%); /* Gradient border effect */
+  padding: 3px; /* Thickness of the border */
+  display: inline-block;
+
+  /* Inner content */
+  .inner {
+    background: #0b0d21; /* Background color inside the border */
+    border-radius: 13px; /* Slightly smaller to match the border */
+    height: calc(100% - 6px); /* Adjust for border padding */
+    width: calc(100% - 6px); /* Adjust for border padding */
+    margin: auto;
+  }
+}
+
+
+
+// Sidebar style
+.sidebar {
+  width: $side_bar_width; // Optional: Customize background color// Optional: Add padding for the content inside the sidebar
+
+  // Example of making the sidebar smaller on smaller screens
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    grid-template-columns: 1fr 6fr 3fr; /* Adjust grid ratio for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .main-container {
+    grid-template-columns: 1fr 5fr 2fr; /* Adjust grid ratio for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr; /* Stack the columns vertically for small screens */
+    grid-template-rows: auto auto auto;
+  }
+  .main-container .sidebar,
+  .main-container .content,
+  .main-container .right {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// Add custom styles
+
+
